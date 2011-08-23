@@ -2,7 +2,8 @@ phpregtest
 ==========
 
 phpregtest is a simple shell script to facilitate regression testing with
-PHPUnit and phpfarm.
+[PHPUnit](http://www.phpunit.de/manual/current/en/index.html) and
+[phpfarm](http://cweiske.de/tagebuch/Introducing%20phpfarm.htm).
 
 Installation
 ------------
@@ -47,3 +48,9 @@ User can specify PHP version(s) to run using '-v' option
         $ phpregtest -v 5*
         $ # uses versions 5.3.5 to 5.3.8 except the 5.3.7
         $ phpregtest -v 5.3.[568]
+
+Repositories
+------------
+
+- [PHPUnit](https://github.com/sebastianbergmann/phpunit)
+- [phpfarm](http://svn.php.net/viewvc/pear/ci/phpfarm/trunk/)
