@@ -22,8 +22,9 @@ The most simple way to run phpregtest is just state
 
 from the directory you usually run phpunit command line utility.
 
-By default it runs phpunit using all PHP interpreters installed by phpfarm
-it finds. It tries to detect phpunit and phpfarm location by itself.
+By default phpregtest runs phpunit using all PHP interpreters installed by
+phpfarm in ascending order ordered by version number. It tries to detect
+phpunit and phpfarm location by itself.
 
 phpregtest can accept the same set of arguments as phpunit does.
 
@@ -31,6 +32,10 @@ phpregtest can accept the same set of arguments as phpunit does.
         $ phpregtest --verbose
         $ # Test MyClass using all installed PHP interpreters
         $ phpregtest --stop-on-failure MyClass.Test.php
+
+Use PHP versions in descending order
+
+        $ phpregtest -d
 
 User can override the phpunit location using `-r` option
 
